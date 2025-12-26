@@ -1,0 +1,38 @@
+.register-container {
+    -fx-padding: 30;
+    -fx-background-color: #ffffff;
+}
+
+.register-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-pref-width: 260px;
+    -fx-padding: 8;
+}
+
+.register-button {
+    -fx-pref-width: 260px;
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.register-button:hover {
+    -fx-background-color: #219150;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}
+
+.success-label {
+    -fx-text-fill: green;
+}
+
+.link-label {
+    -fx-text-fill: #2f80ed;
+    -fx-underline: true;
+}

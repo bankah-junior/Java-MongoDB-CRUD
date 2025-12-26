@@ -1,0 +1,38 @@
+.login-container {
+    -fx-padding: 30;
+    -fx-background-color: #ffffff;
+}
+
+.login-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-pref-width: 260px;
+    -fx-padding: 8;
+}
+
+.login-button {
+    -fx-pref-width: 260px;
+    -fx-background-color: #2f80ed;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.login-button:hover {
+    -fx-background-color: #1c6fd5;
+}
+
+.error-label {
+    -fx-text-fill: red;
+}
+
+.success-label {
+    -fx-text-fill: green;
+}
+
+.link-label {
+    -fx-text-fill: #2f80ed;
+    -fx-underline: true;
+}
