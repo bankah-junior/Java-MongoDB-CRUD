@@ -40,16 +40,17 @@ public class LoginController {
                     Stage stage = (Stage) emailField.getScene().getWindow();
                     FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("home.fxml"));
                     Scene scene = new Scene(fxmlLoader.load());
-                    stage.setTitle("Welcome " + email);
+                    HomeController homeController = fxmlLoader.getController();
+                    homeController.setLoggedInUser(user);
+                    stage.setTitle("Home Screen");
                     stage.setScene(scene);
                     stage.setResizable(false);
                     stage.show();
                 } catch (IOException e) {
                     messageLabel.setText("OPPS!!! Navigation broken. Try again.");
+                    System.out.println(e.getMessage());
                     messageLabel.setVisible(true);
                 }
-                messageLabel.setText("Login successful! Welcome " + user.getName());
-                messageLabel.setVisible(true);
             } else {
                 messageLabel.setText("No user found with the provided email.");
                 messageLabel.setVisible(true);

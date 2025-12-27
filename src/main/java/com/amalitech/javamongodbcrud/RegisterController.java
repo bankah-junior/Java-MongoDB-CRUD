@@ -46,7 +46,9 @@ public class RegisterController {
                     Stage stage = (Stage) usernameField.getScene().getWindow();
                     FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("home.fxml"));
                     Scene scene = new Scene(fxmlLoader.load());
-                    stage.setTitle("Welcome " + username);
+                    HomeController homeController = fxmlLoader.getController();
+                    homeController.setLoggedInUser(user);
+                    stage.setTitle("Home Screen");
                     stage.setScene(scene);
                     stage.setResizable(false);
                     stage.show();

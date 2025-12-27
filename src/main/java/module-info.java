@@ -6,6 +6,8 @@ module com.amalitech.javamongodbcrud {
     requires org.slf4j;
     requires jbcrypt;
     requires org.mongodb.driver.core;
+//    requires com.amalitech.javamongodbcrud;
+    requires javafx.graphics;
 
 
     opens com.amalitech.javamongodbcrud to javafx.fxml;
